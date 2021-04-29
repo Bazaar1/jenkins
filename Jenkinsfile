@@ -1,10 +1,12 @@
 pipeline {
     agent any
+    tools {
+        go 'go-1.13.3'
+    }
     stages {
-        stage('build') {
+        stage('complie') {
             steps {
-                cd apiserver/ &&
-                go build
+                go version
             }
         }
     }
