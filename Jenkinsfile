@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('complie') {
             steps {
-                go version
+                sh 'go version'
             }
         }
     }
