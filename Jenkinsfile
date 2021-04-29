@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "Build!!"
+                cd apiserver/ &&
+                go build
             }
         }
     }
